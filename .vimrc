@@ -28,27 +28,27 @@ filetype on                     " Types de fichiers
 filetype plugin on 
  
 """""""""""""""""""""""""""""
-" Interface 
+" UI
 """"""""""""""""""""""""""""
-set background&                 " détection auto de la couleur du bg pour visibilité 
-set mouse=a                     " Souris
-set ruler                       " pos du curseur
-set nu                          " numeros de lignes
-set showmode                    " mode actuel
-set showcmd                     " montre la cmd en cours
-set wildmenu                    " completion des commandes
-set wildmode =list:longest,list:full    "affiche toutes les possibilités
-set wildignore =*.o,*.r,*.so,*.sl,*.tar,*.tgz    "ignorer certains types de fichiers pour la complétion des includes 
-set visualbell                  " Bip visuel 
+set background&                 " Background color detection
+set mouse=n                     " Mouse grabbing only in normal mode
+set ruler                       " Cursor position
+set nu                          " Line numbering
+set showmode                    " Current mode
+set showcmd                     " Current command
+set wildmenu                    " Autocompletion
+set wildmode =list:longest,list:full    " Completion displays everything
+set wildignore =*.o,*.r,*.so,*.sl,*.tar,*.tgz    " Ignore some file types
+set visualbell                  " No beep
 
 set cursorline
 
 set ut=4000                     " 4s
 au CursorHoldI * stopinsert     " automatically leave insert mode after 'updatetime' milliseconds of inaction
 
-let mapleader = ","            " mappage du leader sur , pour azerty 
-let maplocalleader = "œ"       " mappage du local leader sur 'au carré'
-set pastetoggle=<F5>  
+let mapleader = ","            " leader remapping on , for an azerty kb
+let maplocalleader = "œ"       " local leader remapped on '²'
+set pastetoggle=<F5>           " Change paste mode via F5
 """""""""""""""""""""""""""""
 " Text options
 """"""""""""""""""""""""""""
@@ -241,6 +241,6 @@ endif
 if match($TERM, "screen")!=-1
      exe "set title titlestring=vim:%f"
      exe "set title t_ts=\<ESC>k t_fs=\<ESC>\\"
-     exe "set ttymouse=xterm2"  "resolves ' set mouse=a doesn't work inside screen
+     exe "set ttymouse=xterm2"
      set cursorline!
 endif
