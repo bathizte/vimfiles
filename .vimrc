@@ -184,6 +184,9 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Auto_Update = 1
 let Tlist_Show_One_File = 1
 
+" Airline 
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_monokai'
 
 " Vicle
 let g:vicle_session_name = 'dev'
