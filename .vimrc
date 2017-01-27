@@ -23,6 +23,7 @@ set autoread                    " rechargement auto des fichiers modifiés
 set hidden                      " Ne crie pas au scandale 'not saved' lors du chgmt de buffer
 set nobackup                    " Don't make backups
 set title                       " Change term title
+set titleold=                   " Restore Old title on exit
 
 filetype on                     " Types de fichiers
 filetype plugin on 
@@ -241,6 +242,7 @@ if filereadable(expand("~/.vimrc.local"))
 source ~/.vimrc.local " Include user's local vim config
 endif
 
+" Screen-specific workarounds
 if match($TERM, "screen")!=-1
      exe "set title titlestring=vim:%f"
      exe "set title t_ts=\<ESC>k t_fs=\<ESC>\\"
