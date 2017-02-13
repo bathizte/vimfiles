@@ -41,6 +41,7 @@ set wildmenu                    " Autocompletion
 set wildmode =list:longest,list:full    " Completion displays everything
 set wildignore =*.o,*.r,*.so,*.sl,*.tar,*.tgz    " Ignore some file types
 set visualbell                  " No beep
+set vb t_vb=                    " Visual bell
 
 set cursorline
 
@@ -77,12 +78,11 @@ set smartindent
 "set cinoptions = "(1"
 
 
-" Déplacement
-set whichwrap=<,>,h,l,[,]       " Envoyer le curseur sur la ligne suivante/précédente après usage des flèches droite/gauche en bout de ligne  
-set nostartofline               " Tenter de rester toujours sur la même colonne lors de changements de lignes  
-set scrolloff=3
-set vb t_vb=                    " Pas de beep / A la place alerte visuelle"
-set virtualedit=block           " On ne peut placer le curseur que là ou il y a du texte
+" Moving
+set whichwrap=<,>,h,l,[,]       " Send the cursor on next / previous line when using moving arrows at EOL
+set nostartofline               " Try to stay on the same column when changing line
+set scrolloff=3                 " Visible lignes offset
+set virtualedit=onemore         " Virtual edit allows to add chars at the EOL
 
 "set backspace=indent,eol,start 
 
