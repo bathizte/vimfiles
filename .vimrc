@@ -178,6 +178,10 @@ nmap <F2> :NERDTreeToggle<cr>
 "let NERDTreeChDirMode = 1
 nmap <F3> :NERDTreeMirror<cr> 
 
+" NERDCommenter
+let g:NERDSpaceDelims = 1 "1 space after comment char
+let g:NERDDefaultAlign = 'left' "column aligned comment chars
+
 
 "TagList par F4
 nmap <F4> :TlistToggle<cr>
