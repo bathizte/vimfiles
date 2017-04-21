@@ -134,6 +134,8 @@ set fdl=0
 set foldcolumn=1
 set foldmethod=indent
 
+" Diff
+set diffopt+=iwhite
  
 """"""""""""""""""""""""""""""
 " Raccourcis
@@ -160,6 +162,7 @@ map <C-t> :tabnew<CR>
 " write after prompting sudo 
 cmap w!! %!sudo tee > /dev/null %
  
+
 """""""""""""""""""""""""""""
 " Plugins & leurs raccourcis
 """""""""""""""""""""""""""""
