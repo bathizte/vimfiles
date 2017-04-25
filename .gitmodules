@@ -25,3 +25,6 @@
 [submodule "bundle/tmuxline"]
 	path = bundle/tmuxline
 	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git

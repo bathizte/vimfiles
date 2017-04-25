@@ -86,20 +86,6 @@ set virtualedit=onemore         " Virtual edit allows to add chars at the EOL
 
 "set backspace=indent,eol,start 
 
-" remappe les moves pour permettre les accents
-
-
-" désactive les flêches directionnelles
-"map <left> <Esc>
-"map <Down> <Esc>
-"map <Up> <Esc>
-"map <Right> <Esc>
-"imap <Left> <Esc>
-"imap <Down> <Esc>
-"imap <Up> <Esc>
-"imap <Right> <Esc>
- 
-
 syntax on
 
 set ofu=syntaxComplete#Complete
